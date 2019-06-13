@@ -27,7 +27,7 @@ public class Config {
             properties.setProperty("keystorePass", ""); // jks 证书密码
             properties.setProperty("maxWrongPassCount", String.valueOf(5)); // 密码错误最大次数
             properties.setProperty("loginTitle", "sprov-ui 登录"); // 登录页面标题
-            properties.setProperty("loginFooter", "Github - <a href=\"https://github.com/sprov065/sprov-ui\" target=\"_blank\">sprov-ui</a>"); // 登录页面 Foot
+            properties.setProperty("loginFooter", "Github - <a href=\"https://github.com/ljxangus/sprov-ui\" target=\"_blank\">sprov-ui</a>"); // 登录页面 Foot
             try {
                 File file = new File(configPath);
                 FileUtils.forceMkdir(file.getParentFile());
@@ -96,7 +96,7 @@ public class Config {
     }
 
     public static String loginFooter() {
-        return properties.getProperty("loginFooter", "Github - <a href=\"https://github.com/sprov065/sprov-ui\" target=\"_blank\">sprov-ui</a>");
+        return properties.getProperty("loginFooter", "Github - <a href=\"https://github.com/ljxangus/sprov-ui\" target=\"_blank\">sprov-ui</a>");
     }
 
     public static String currentVersion() {

@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
 
 public class SprovUIService {
 
-    private static final String GITHUB_LAST_RELEASE_URL = "https://github.com/sprov065/sprov-ui/releases/latest";
+    private static final String GITHUB_LAST_RELEASE_URL = "https://github.com/ljxangus/sprov-ui/releases/latest";
 
     private String currentVersion = Config.currentVersion();
 
@@ -45,7 +45,7 @@ public class SprovUIService {
     }
 
     private String getLastDownloadUrl() {
-        return "https://github.com/sprov065/sprov-ui/releases/download/" + lastVersion + "/sprov-ui-" + lastVersion + ".jar";
+        return "https://github.com/ljxangus/sprov-ui/releases/download/" + lastVersion + "/sprov-ui-" + lastVersion + ".jar";
     }
 
     private void refreshLastVersion() throws Exception {
